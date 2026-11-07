@@ -1,0 +1,16 @@
+Peak mapping and decoherence times (1 MHz = 1 scaled Hz)
+   MHz  tau ordered (s)  tau decohered (s)  width ordered (Hz)  width decohered (Hz)
+    12            5.305             0.1061                0.06                   3.0
+    20            3.183             0.0637                0.10                   5.0
+    22            2.894             0.0579                0.11                   5.5
+    30            2.122             0.0424                0.15                   7.5
+   101            0.630             0.0126                0.51                  25.2
+   113            0.563             0.0113                0.56                  28.2
+   185            0.344             0.0069                0.93                  46.2
+   204            0.312             0.0062                1.02                  51.0
+
+QuTiP self-check against exact math:
+  ordered    Q=200.0  max |QuTiP - exact| = 3.80e-05  (OK)
+  decohered  Q=4.0    max |QuTiP - exact| = 5.28e-07  (OK)
+
+Figure saved to /home/claude/microtubule-classifier/outputs/mhz_spectra.png

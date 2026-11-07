@@ -1,0 +1,36 @@
+Running source: toy  (100 signals per class, 5 seeds)
+    seed 1/5 done
+    seed 2/5 done
+    seed 3/5 done
+    seed 4/5 done
+    seed 5/5 done
+  done in 15 s
+Running source: qutip  (40 signals per class, 3 seeds)
+    seed 1/3 done
+    seed 2/3 done
+    seed 3/3 done
+  done in 168 s
+
+[toy]  mean test accuracy over 5 seeds
+ noise | logistic regression |       random forest |     shuffled labels
+     2 |  1.000 +/- 0.000   |  1.000 +/- 0.000   |  0.517 +/- 0.143  
+     5 |  1.000 +/- 0.000   |  1.000 +/- 0.000   |  0.497 +/- 0.118  
+     8 |  0.997 +/- 0.007   |  0.990 +/- 0.008   |  0.457 +/- 0.116  
+    10 |  0.957 +/- 0.033   |  0.957 +/- 0.017   |  0.463 +/- 0.053    <-- headline noise
+    12 |  0.890 +/- 0.034   |  0.883 +/- 0.021   |  0.430 +/- 0.045  
+    15 |  0.800 +/- 0.051   |  0.817 +/- 0.047   |  0.537 +/- 0.068  
+    20 |  0.670 +/- 0.041   |  0.653 +/- 0.060   |  0.487 +/- 0.074  
+    30 |  0.553 +/- 0.037   |  0.530 +/- 0.059   |  0.513 +/- 0.055  
+
+[qutip]  mean test accuracy over 3 seeds
+ noise | logistic regression |       random forest |     shuffled labels
+     2 |  1.000 +/- 0.000   |  1.000 +/- 0.000   |  0.514 +/- 0.052  
+     5 |  1.000 +/- 0.000   |  1.000 +/- 0.000   |  0.417 +/- 0.068  
+     8 |  0.847 +/- 0.104   |  0.889 +/- 0.020   |  0.569 +/- 0.086  
+    10 |  0.778 +/- 0.052   |  0.764 +/- 0.071   |  0.458 +/- 0.102    <-- headline noise
+    12 |  0.681 +/- 0.052   |  0.667 +/- 0.059   |  0.639 +/- 0.052  
+    15 |  0.583 +/- 0.090   |  0.583 +/- 0.118   |  0.500 +/- 0.090  
+    20 |  0.319 +/- 0.052   |  0.375 +/- 0.090   |  0.444 +/- 0.109  
+    30 |  0.486 +/- 0.086   |  0.542 +/- 0.102   |  0.458 +/- 0.059  
+
+Saved: /home/claude/microtubule-classifier/outputs/mhz_accuracy_vs_noise.png and /home/claude/microtubule-classifier/outputs/mhz_sweep_results.csv

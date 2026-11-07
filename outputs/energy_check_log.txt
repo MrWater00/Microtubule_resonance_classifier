@@ -1,0 +1,4 @@
+Mean signal power (mean of x^2), before noise, averaged over 10 signals
+
+ordered    Q=200    toy =  4.002   qutip =  0.854   qutip/toy = 0.213
+decohered  Q=4      toy =  3.993   qutip =  0.018   qutip/toy = 0.004

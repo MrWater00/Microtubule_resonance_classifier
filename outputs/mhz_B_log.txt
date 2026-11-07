@@ -1,0 +1,25 @@
+Running source: toy (equal energy), 100 per class, 5 seeds
+    seed 1/5 done
+    seed 2/5 done
+    seed 3/5 done
+    seed 4/5 done
+    seed 5/5 done
+  done in 16 s
+Running source: qutip (equal energy), 40 per class, 3 seeds
+    seed 1/3 done
+    seed 2/3 done
+    seed 3/3 done
+  done in 177 s
+
+B) random-forest test accuracy: raw (earlier run) vs equal energy
+ noise |  toy raw | toy equal | qutip raw | qutip equal | shuffled (equal, qutip)
+     2 |    1.000 |     1.000 |     1.000 |       1.000 | 0.472
+     5 |    1.000 |     1.000 |     1.000 |       1.000 | 0.500
+     8 |    0.990 |     0.993 |     0.889 |       1.000 | 0.569
+    10 |    0.957 |     0.953 |     0.764 |       1.000 | 0.458
+    12 |    0.883 |     0.870 |     0.667 |       0.986 | 0.639
+    15 |    0.817 |     0.807 |     0.583 |       0.903 | 0.458
+    20 |    0.653 |     0.660 |     0.375 |       0.764 | 0.500
+    30 |    0.530 |     0.573 |     0.542 |       0.542 | 0.528
+
+Saved: /home/claude/microtubule-classifier/outputs/mhz_equal_energy.png and mhz_energy_results.csv
